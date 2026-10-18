@@ -56,6 +56,10 @@ tr:last-child td{border-bottom:0}
 tbody tr:hover{background:var(--grid)}
 
 .list{display:grid;gap:22px}
+.docs{border:1px solid var(--rule);background:var(--paper);padding:12px 16px}
+.docs ul{columns:2 260px;column-gap:28px;margin:8px 0 0;padding-left:18px;font-size:14px}
+.docs li{break-inside:avoid;margin-bottom:3px}
+.head-text .intro+.intro{margin-top:-4px}
 .proj{background:var(--sheet);border:1px solid var(--rule);display:grid;grid-template-columns:minmax(0,1fr) 280px}
 .proj-main{padding:24px clamp(18px,3vw,32px);display:grid;gap:14px;min-width:0}
 .proj-no{font-family:var(--f-mono);color:var(--mark);font-size:13px;letter-spacing:.06em}
@@ -133,7 +137,8 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
       <div class="label">Portfolio · Selected work 2014–2026</div>
       <h1>Mehrdad Gharazadeh</h1>
       <div class="role">Mechanical Engineer · Storage Tanks, Pressure Vessels, CAD</div>
-      <p class="intro">I design storage tanks, pressure vessels and heat exchangers, and I make the drawings that the shop uses to build them. This page shows some of my projects for refineries and petrochemical plants in Iran, and my FEA work at TU Chemnitz.</p>
+      <p class="intro">I have about 10 years of experience with static equipment for refineries, gas condensate and petrochemical plants in Iran. I design and draw API 650 storage tanks from 6 m to 94 m in diameter, with all common roof types: fixed cone and dome roofs (self-supported, on rafters and columns, or on girders without columns), external double-deck and pontoon floating roofs, and internal floating roofs. I also design ASME VIII pressure vessels, such as vertical air receivers and horizontal process vessels, and TEMA shell-and-tube heat exchangers with U-tubes.</p>
+      <p class="intro">My work covers the whole job: mechanical calculation, general arrangement and fabrication drawings, plate cutting plans, material take-off and the full vendor document package. Clients usually approved my drawings at revision 2 or 3. Now I am finishing my M.Sc. at TU Chemnitz, where I work with FEA in Abaqus. In one study my pulley design lowered the peak contact pressure by 78 %.</p>
       <div class="contact">
         <span>mgharazadeh@gmail.com</span>
         <a href="https://www.linkedin.com/in/mehrdad-gharazadeh-1074b1115" target="_blank" rel="noopener">LinkedIn</a>
@@ -142,29 +147,25 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
     </div>
     <img class="portrait" src="img/full/portrait.jpg" alt="Photo of Mehrdad Gharazadeh">
   </div>
-  <div class="facts">
-    <div><b>10 years</b><span>tank, vessel and heat exchanger work</span></div>
-    <div><b>6 to 94 m</b><span>diameter of API 650 tanks I designed or revised</span></div>
-    <div><b>Rev. 2–3</b><span>usual client approval of my drawings</span></div>
-    <div><b>78 % lower</b><span>peak contact pressure, best pulley design (FEA)</span></div>
-  </div>
 </header>
 
 <section aria-labelledby="reg">
-  <div class="sec-h"><h2 id="reg">Drawing list</h2><span class="label">12 entries</span></div>
+  <div class="sec-h"><h2 id="reg">Drawing list</h2><span class="label">14 entries</span></div>
   <div class="tbl"><table>
     <thead><tr><th>No.</th><th>Project</th><th>Equipment</th><th>My work</th><th>Tools</th></tr></thead>
     <tbody>
-      <tr><td><a href="#p01">P-01</a></td><td>Southern Adish Gas Condensate Refinery</td><td>6 API 650 utility tanks</td><td>Calculation and full drawing set</td><td>AutoCAD, Excel</td></tr>
+      <tr><td><a href="#p01">P-01</a></td><td>Southern Adish Gas Condensate Refinery</td><td>6 storage tanks, fixed cone roof</td><td>Calculation and full drawing set</td><td>AutoCAD, Excel</td></tr>
       <tr><td><a href="#p02">P-02</a></td><td>Mokran Petro Refinery</td><td>Crude oil tanks TK-2003 A/B, 94 m</td><td>Design and full drawing set</td><td>AutoCAD</td></tr>
-      <tr><td><a href="#p03">P-03</a></td><td>Bandar Abbas–Sirjan–Rafsanjan 26″ pipeline</td><td>Relief tank TK-5001</td><td>Calculation, drawings, procedures</td><td>AutoCAD, Excel</td></tr>
-      <tr><td><a href="#p04">P-04</a></td><td>Kimia Project</td><td>Heat exchangers E-416-N, E-427-N</td><td>GA drawings and part lists</td><td>AutoCAD</td></tr>
-      <tr><td><a href="#p05">P-05</a></td><td>Assaluyeh tank farm, phase II</td><td>Spiral stair, TK-10202</td><td>Steel detail drawing</td><td>AutoCAD</td></tr>
-      <tr><td><a href="#p06">P-06</a></td><td>Process and utility vessels</td><td>Air receiver S9-V-101, process vessels</td><td>GA and detail drawings, MTO</td><td>AutoCAD, Excel</td></tr>
-      <tr><td><a href="#p07">P-07</a></td><td>Gas analyzer shelter</td><td>Outdoor analyzer cabinet</td><td>3D model, renders, GA drawing</td><td>SolidWorks</td></tr>
+      <tr><td><a href="#p03">P-03</a></td><td>Bandar Abbas–Sirjan–Rafsanjan 26″ pipeline</td><td>Fixed roof tanks, relief tank TK-5001</td><td>Calculation, drawings, document package</td><td>AutoCAD, Excel</td></tr>
+      <tr><td><a href="#p04">P-04</a></td><td>Kimia Project</td><td>Heat exchangers E-416-N, E-427-N</td><td>Mechanical calculation, GA drawings</td><td>AutoCAD</td></tr>
+      <tr><td><a href="#p05">P-05</a></td><td>Assaluyeh tank farm, phase II</td><td>DEG tank TK-10202, dome roof</td><td>Full design, 20 drawings</td><td>AutoCAD</td></tr>
+      <tr><td><a href="#p06">P-06</a></td><td>Marun 3 oil field</td><td>Air receiver S9-V-101</td><td>GA and detail drawings</td><td>AutoCAD, Excel</td></tr>
+      <tr><td><a href="#p07">P-07</a></td><td>Gas analyzer shelter</td><td>Outdoor analyzer cabinet</td><td>Design, purchase list, drawings</td><td>SolidWorks</td></tr>
       <tr><td><a href="#p08">P-08</a></td><td>Sheet metal parts</td><td>Brackets and covers</td><td>Sheet metal design, flat patterns</td><td>SolidWorks</td></tr>
-      <tr><td><a href="#p09">P-09</a></td><td>Bandar Abbas Condensate Gas Refinery</td><td>11 storage tanks, 32 to 84 m</td><td>Revised calculations and drawings (2019)</td><td>Excel, AutoCAD</td></tr>
+      <tr><td><a href="#p09">P-09</a></td><td>Bandar Abbas Condensate Gas Refinery</td><td>11 tanks, fixed and floating roofs</td><td>Revised design and document package</td><td>Excel, AutoCAD</td></tr>
       <tr><td><a href="#p10">P-10</a></td><td>Dust separation</td><td>Cyclone separators</td><td>Sizing tool</td><td>Excel</td></tr>
+      <tr><td><a href="#p11">P-11</a></td><td>Mini refinery</td><td>Skid and two horizontal vessels</td><td>Design and drawings</td><td>AutoCAD</td></tr>
+      <tr><td><a href="#p12">P-12</a></td><td>Decanter tank</td><td>Tank with ladder and frame</td><td>Design, drawing, cutting plan</td><td>AutoCAD</td></tr>
       <tr><td><a href="#r01">R-01</a></td><td>TU Chemnitz, research assistant</td><td>Braided rope on a pulley</td><td>FE contact study, four pulley surfaces</td><td>Abaqus, Python</td></tr>
       <tr><td><a href="#r02">R-02</a></td><td>TU Chemnitz, master's thesis</td><td>Cutting of polyamide 6</td><td>Burr formation model</td><td>Abaqus, VUMAT</td></tr>
     </tbody>
@@ -177,28 +178,28 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
   <article class="proj" id="p01">
     <div class="proj-main">
       <div class="proj-no">P-01</div>
-      <h3>Two fire water tanks and four utility tanks, Southern Adish refinery</h3>
-      <p>Six API 650 tanks for steam condensate, drinking water, desalinated water and fire water. For the two fire water tanks TK-522-41 A/B (30 m diameter, 14.6 m high) I did the calculations and drew the full set: general arrangement, orientation, roof plates with cutting plan, roof handrail and the spiral stair.</p>
+      <h3>Six API 650 storage tanks, Southern Adish refinery</h3>
+      <p>Six fixed cone roof storage tanks for the utility area of the refinery: two fire water tanks, and tanks for LP steam condensate, drinking water and desalinated water. Their volumes are from 157 m³ to 10,320 m³. The largest are the fire water tanks TK-522-41 A/B, 30 m in diameter and 14.6 m high, with the roof on rafters and columns.</p>
       <ul>
-        <li>Roof plate cutting plan: 52 standard 6000 x 1500 plates, the edge plates cut from the same sheets to keep scrap low.</li>
-        <li>Spiral stair with two landings, 70 grating treads and a full part list (3.2 t).</li>
+        <li>I did the calculations for each tank: shell, roof, wind, seismic and anchors.</li>
+        <li>I drew the full set: general arrangement, orientation, shell, bottom and roof plates, roof structure, nozzles, manholes, handrail, spiral stair and anchor chairs.</li>
+        <li>I laid out the plates on standard 6000 x 1500 mm sheets, so the tanks have fewer weld seams and less waste.</li>
       </ul>
       <div class="gal">
         <button data-full="img/full/adish-ga2.jpg" data-cap="General arrangement and design data"><img src="img/thumb/adish-ga2.jpg" alt="General arrangement and design data" loading="lazy"><figcaption>General arrangement and design data</figcaption></button>
-        <button data-full="img/full/adish-orientA.jpg" data-cap="Orientation, tank A"><img src="img/thumb/adish-orientA.jpg" alt="Orientation, tank A" loading="lazy"><figcaption>Orientation, tank A</figcaption></button>
-        <button data-full="img/full/adish-orientB.jpg" data-cap="Orientation, tank B"><img src="img/thumb/adish-orientB.jpg" alt="Orientation, tank B" loading="lazy"><figcaption>Orientation, tank B</figcaption></button>
+        <button data-full="img/full/adish-orientA.jpg" data-cap="Orientation drawing"><img src="img/thumb/adish-orientA.jpg" alt="Orientation drawing" loading="lazy"><figcaption>Orientation drawing</figcaption></button>
         <button data-full="img/full/adish-roofplate.jpg" data-cap="Roof plates and cutting plan"><img src="img/thumb/adish-roofplate.jpg" alt="Roof plates and cutting plan" loading="lazy"><figcaption>Roof plates and cutting plan</figcaption></button>
         <button data-full="img/full/adish-handrail.jpg" data-cap="Roof handrail"><img src="img/thumb/adish-handrail.jpg" alt="Roof handrail" loading="lazy"><figcaption>Roof handrail</figcaption></button>
         <button data-full="img/full/adish-stair1.jpg" data-cap="Spiral stair, layout and part list"><img src="img/thumb/adish-stair1.jpg" alt="Spiral stair, layout and part list" loading="lazy"><figcaption>Spiral stair, layout and part list</figcaption></button>
         <button data-full="img/full/adish-stair2.jpg" data-cap="Spiral stair, details"><img src="img/thumb/adish-stair2.jpg" alt="Spiral stair, details" loading="lazy"><figcaption>Spiral stair, details</figcaption></button>
-        <button data-full="img/full/adish-stair3.jpg" data-cap="Spiral stair, landings and treads"><img src="img/thumb/adish-stair3.jpg" alt="Spiral stair, landings and treads" loading="lazy"><figcaption>Spiral stair, landings and treads</figcaption></button>
-        <button data-full="img/full/adish-shell.jpg" data-cap="Shell plate layout"><img src="img/thumb/adish-shell.jpg" alt="Shell plate layout" loading="lazy"><figcaption>Shell plate layout</figcaption></button>
+        <button data-full="img/full/adish-stair3.jpg" data-cap="Spiral stair, landings and steps"><img src="img/thumb/adish-stair3.jpg" alt="Spiral stair, landings and steps" loading="lazy"><figcaption>Spiral stair, landings and steps</figcaption></button>
       </div>
     </div>
     <dl class="data">
       <div><dt>Year</dt><dd>2020–2021</dd></div>
       <div><dt>Code</dt><dd>API 650 12th ed., Annex E and F, NFPA 22, ASCE 7-10</dd></div>
-      <div><dt>Tank size</dt><dd>30 m x 14.6 m, 10,320 m³</dd></div>
+      <div><dt>Tanks</dt><dd>6 tanks, 157 to 10,320 m³</dd></div>
+      <div><dt>Roof</dt><dd>Fixed cone roof</dd></div>
       <div><dt>Material</dt><dd>A516-70N shell, A283-C roof</dd></div>
       <div><dt>Status</dt><dd>Issued for final</dd></div>
     </dl>
@@ -213,13 +214,12 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
         <li>Shell: 94 m inside diameter, 16.5 m high, 9 courses from 38 mm down to 10 mm (A516-70 and A283-C), about 862 t.</li>
         <li>Floating roof: 9 rings of trusses and compartments, upper deck of 5 mm plates, about 306 t.</li>
         <li>Plate lists and cutting sizes for every shell and deck plate.</li>
+        <li>Same refinery: a methanol storage tank with a fixed roof and an internal pontoon floating roof. I made the full set of 31 drawings, from shell, bottom and roof plates to the pontoon roof, seals, vents, stairs, walkway and cooling water system.</li>
       </ul>
       <div class="gal">
         <button data-full="img/full/mokran-shell.jpg" data-cap="Shell plate arrangement and weld details"><img src="img/thumb/mokran-shell.jpg" alt="Shell plate arrangement and weld details" loading="lazy"><figcaption>Shell plate arrangement and weld details</figcaption></button>
         <button data-full="img/full/mokran-froof.jpg" data-cap="Floating roof support arrangement"><img src="img/thumb/mokran-froof.jpg" alt="Floating roof support arrangement" loading="lazy"><figcaption>Floating roof support arrangement</figcaption></button>
         <button data-full="img/full/mokran-deck.jpg" data-cap="Upper deck plate arrangement"><img src="img/thumb/mokran-deck.jpg" alt="Upper deck plate arrangement" loading="lazy"><figcaption>Upper deck plate arrangement</figcaption></button>
-        <button data-full="img/full/mokran-ladder.jpg" data-cap="Rolling ladder"><img src="img/thumb/mokran-ladder.jpg" alt="Rolling ladder" loading="lazy"><figcaption>Rolling ladder</figcaption></button>
-        <button data-full="img/full/mokran-platform.jpg" data-cap="Top platform and nozzle detail"><img src="img/thumb/mokran-platform.jpg" alt="Top platform and nozzle detail" loading="lazy"><figcaption>Top platform and nozzle detail</figcaption></button>
       </div>
     </div>
     <dl class="data">
@@ -235,25 +235,34 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
   <article class="proj" id="p03">
     <div class="proj-main">
       <div class="proj-no">P-03</div>
-      <h3>Relief tank for a 26″ pipeline pump station</h3>
-      <p>Calculation, drawings and shop documents for relief tank TK-5001 at the Bandar Abbas pump station of NIOEC.</p>
-      <ul>
-        <li>API 650 calculation: shell, roof, wind, seismic (Annex E), anchors and venting.</li>
-        <li>General drawing, plate layouts, cutting plan and a caged ladder with safety gate.</li>
-        <li>Hydrotest, erection, welding (WPS/PQR), NDT and painting procedures.</li>
-      </ul>
-      <div class="gal">
-        <button data-full="img/full/nioec-ga.jpg" data-cap="General drawing"><img src="img/thumb/nioec-ga.jpg" alt="General drawing" loading="lazy"><figcaption>General drawing</figcaption></button>
+      <h3>Fixed roof tanks for a 26″ pipeline pump station</h3>
+      <p>Fixed roof tanks for the pump stations and terminals of the Bandar Abbas–Sirjan–Rafsanjan 26″ pipeline (NIOEC). For relief tank TK-5001 (6.2 m x 5.4 m, 163 m³) I did the API 650 calculation for shell, roof, wind, seismic, anchors and venting, and drew the general drawing and the caged ladder.</p>
+      <div class="docs"><div class="label">Document package I prepare for a fixed roof tank</div><ul>
+        <li>Mechanical calculation</li>
+        <li>Venting calculation (API 2000)</li>
+        <li>Fixed roof structure calculation</li>
+        <li>Nozzle and clip local stress calculation</li>
+        <li>General drawing and orientation</li>
+        <li>Shell, bottom and roof plate drawings</li>
+        <li>Shell and roof nozzle drawings</li>
+        <li>Shell and roof manhole drawings</li>
+        <li>Roof structure, sump and name plate</li>
+        <li>Handrail, spiral stair or ladder, pipe supports</li>
+        <li>ITP, WPS / PQR and weld map, NDT map</li>
+        <li>NDT, painting, erection and hydrotest procedures</li>
+        <li>Material take-off and spare part list</li>
+        <li>Vendor print index and final data book</li>
+      </ul></div>
+      <div class="gal wide">
+        <button data-full="img/full/nioec-ga.jpg" data-cap="General drawing, TK-5001"><img src="img/thumb/nioec-ga.jpg" alt="General drawing, TK-5001" loading="lazy"><figcaption>General drawing, TK-5001</figcaption></button>
         <button data-full="img/full/nioec-ladder.jpg" data-cap="Caged ladder"><img src="img/thumb/nioec-ladder.jpg" alt="Caged ladder" loading="lazy"><figcaption>Caged ladder</figcaption></button>
-        <button data-full="img/full/pipe-ga.jpg" data-cap="Elevation and shell plates"><img src="img/thumb/pipe-ga.jpg" alt="Elevation and shell plates" loading="lazy"><figcaption>Elevation and shell plates</figcaption></button>
-        <button data-full="img/full/pipe-shell.jpg" data-cap="Shell development and nozzles"><img src="img/thumb/pipe-shell.jpg" alt="Shell development and nozzles" loading="lazy"><figcaption>Shell development and nozzles</figcaption></button>
-        <button data-full="img/full/pipe-cutting.jpg" data-cap="Bottom and roof cutting plan"><img src="img/thumb/pipe-cutting.jpg" alt="Bottom and roof cutting plan" loading="lazy"><figcaption>Bottom and roof cutting plan</figcaption></button>
       </div>
     </div>
     <dl class="data">
       <div><dt>Year</dt><dd>2022</dd></div>
-      <div><dt>Tank</dt><dd>6.2 m x 5.4 m, 163 m³</dd></div>
-      <div><dt>Product</dt><dd>Gasoil, kerosene, gasoline</dd></div>
+      <div><dt>Client</dt><dd>NIOEC</dd></div>
+      <div><dt>Tank</dt><dd>TK-5001, 6.2 m x 5.4 m, 163 m³</dd></div>
+      <div><dt>Roof</dt><dd>Fixed cone roof</dd></div>
       <div><dt>Code</dt><dd>API 650, API 2000</dd></div>
     </dl>
   </article>
@@ -262,7 +271,7 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
     <div class="proj-main">
       <div class="proj-no">P-04</div>
       <h3>Shell-and-tube heat exchangers, Kimia Project</h3>
-      <p>General arrangement drawings for two stainless steel U-tube exchangers, with part lists, nozzle tables, tube sheet, baffles, saddles, weld details and the name plate.</p>
+      <p>Two stainless steel U-tube heat exchangers (TEMA type AEU). I did the mechanical calculations to ASME VIII Div. 1 and TEMA, and the general arrangement drawings with part lists, nozzle tables, tube sheet, baffles, saddles, weld details and the name plate.</p>
       <div class="gal wide">
         <button data-full="img/full/kimia-e427.jpg" data-cap="General arrangement, E-427-N"><img src="img/thumb/kimia-e427.jpg" alt="General arrangement, E-427-N" loading="lazy"><figcaption>General arrangement, E-427-N</figcaption></button>
         <button data-full="img/full/hx-ga.jpg" data-cap="General arrangement, E-416-N"><img src="img/thumb/hx-ga.jpg" alt="General arrangement, E-416-N" loading="lazy"><figcaption>General arrangement, E-416-N</figcaption></button>
@@ -280,30 +289,41 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
   <article class="proj" id="p05">
     <div class="proj-main">
       <div class="proj-no">P-05</div>
-      <h3>Spiral stair, Assaluyeh tank farm</h3>
-      <p>Detail drawing of the spiral stair for tank TK-10202: stringers, steps, landing and supports, shown as a developed view along the shell.</p>
-      <div class="gal wide">
-        <button data-full="img/full/deg-stair.jpg" data-cap="Spiral stair, developed view"><img src="img/thumb/deg-stair.jpg" alt="Spiral stair drawing" loading="lazy"><figcaption>Spiral stair, developed view</figcaption></button>
+      <h3>Diethylene glycol tank TK-10202, Assaluyeh tank farm</h3>
+      <p>Full design of an API 650 storage tank for diethylene glycol at the Centralized Tank Farm, Assaluyeh phase II. The tank is 22.5 m in diameter and 17.3 m high, with an externally supported dome roof on rafters and girders and no inner columns. It is designed for internal pressure and vacuum (API 650 Annex F and V).</p>
+      <ul>
+        <li>I did the calculations: shell, bottom, dome roof and roof structure, wind, seismic, anchors and venting.</li>
+        <li>I made the data sheet and all 20 drawings: general assembly, shell, bottom and roof plates with cutting plans, roof structure, anchor chairs, nozzles, manholes, sump, gauge hatch, spiral stair, walkway, platform and cooling water system.</li>
+      </ul>
+      <div class="gal">
+        <button data-full="img/full/deg-ga.jpg" data-cap="General assembly"><img src="img/thumb/deg-ga.jpg" alt="General assembly" loading="lazy"><figcaption>General assembly</figcaption></button>
+        <button data-full="img/full/deg-shell.jpg" data-cap="Shell plates and part list"><img src="img/thumb/deg-shell.jpg" alt="Shell plates and part list" loading="lazy"><figcaption>Shell plates and part list</figcaption></button>
+        <button data-full="img/full/deg-bottom.jpg" data-cap="Bottom and annular plates"><img src="img/thumb/deg-bottom.jpg" alt="Bottom and annular plates" loading="lazy"><figcaption>Bottom and annular plates</figcaption></button>
+        <button data-full="img/full/deg-roof.jpg" data-cap="Dome roof plates"><img src="img/thumb/deg-roof.jpg" alt="Dome roof plates" loading="lazy"><figcaption>Dome roof plates</figcaption></button>
+        <button data-full="img/full/deg-roofstr.jpg" data-cap="Roof structure"><img src="img/thumb/deg-roofstr.jpg" alt="Roof structure" loading="lazy"><figcaption>Roof structure</figcaption></button>
+        <button data-full="img/full/deg-stair.jpg" data-cap="Spiral stair"><img src="img/thumb/deg-stair.jpg" alt="Spiral stair" loading="lazy"><figcaption>Spiral stair</figcaption></button>
       </div>
     </div>
     <dl class="data">
-      <div><dt>Plant</dt><dd>Centralized Tank Farm, Assaluyeh phase II</dd></div>
-      <div><dt>Drawing</dt><dd>Steel detail</dd></div>
+      <div><dt>Code</dt><dd>API 650 13th ed., Annex F and V</dd></div>
+      <div><dt>Tank</dt><dd>22.5 m x 17.3 m, 6,879 m³</dd></div>
+      <div><dt>Roof</dt><dd>External supported dome roof</dd></div>
+      <div><dt>Design pressure</dt><dd>+1,765 / −490 mmWC</dd></div>
+      <div><dt>Weight</dt><dd>244 t empty</dd></div>
+      <div><dt>Drawings</dt><dd>20 drawings and data sheet</dd></div>
     </dl>
   </article>
 
   <article class="proj" id="p06">
     <div class="proj-main">
       <div class="proj-no">P-06</div>
-      <h3>Air receiver and process vessels</h3>
-      <p>Vertical air receiver S9-V-101 for the Marun 3 oil field (NISOC): 2.5 m diameter, 7.4 m tangent to tangent, 35 m³, 10 barg. I made the general arrangement, the shell and skirt drawing, and the nozzle and manhole details. Also GA and detail drawings for smaller process vessels.</p>
+      <h3>Air receiver S9-V-101, Marun 3 oil field</h3>
+      <p>Vertical air receiver S9-V-101 for the Marun 3 oil field (NISOC): 2.5 m diameter, 7.4 m tangent to tangent, 35 m³, 10 barg. I made the general arrangement, the shell and skirt drawing, and the nozzle and manhole details.</p>
       <div class="gal">
         <button data-full="img/full/air-ga.jpg" data-cap="General arrangement, S9-V-101"><img src="img/thumb/air-ga.jpg" alt="General arrangement, S9-V-101" loading="lazy"><figcaption>General arrangement, S9-V-101</figcaption></button>
         <button data-full="img/full/air-body.jpg" data-cap="Shell, heads, skirt and supports"><img src="img/thumb/air-body.jpg" alt="Shell, heads, skirt and supports" loading="lazy"><figcaption>Shell, heads, skirt and supports</figcaption></button>
         <button data-full="img/full/air-nozzles.jpg" data-cap="Nozzle details"><img src="img/thumb/air-nozzles.jpg" alt="Nozzle details" loading="lazy"><figcaption>Nozzle details</figcaption></button>
         <button data-full="img/full/air-manhole.jpg" data-cap="Manhole and davit detail"><img src="img/thumb/air-manhole.jpg" alt="Manhole and davit detail" loading="lazy"><figcaption>Manhole and davit detail</figcaption></button>
-        <button data-full="img/full/mini-vessel.jpg" data-cap="Mini-refinery vessel"><img src="img/thumb/mini-vessel.jpg" alt="Mini-refinery vessel" loading="lazy"><figcaption>Mini-refinery vessel</figcaption></button>
-        <button data-full="img/full/decanter.jpg" data-cap="Decanter tank"><img src="img/thumb/decanter.jpg" alt="Decanter tank" loading="lazy"><figcaption>Decanter tank</figcaption></button>
       </div>
     </div>
     <dl class="data">
@@ -318,11 +338,10 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
     <div class="proj-main">
       <div class="proj-no">P-07</div>
       <h3>Gas analyzer shelter</h3>
-      <p>An outdoor cabinet for an oxygen analyzer with its sample conditioning system: frame and body, door with window, cable ducts, C-rails, vortex cooler, filter regulators, zero and span gas cylinders and all tubing. I modelled the full assembly in SolidWorks, made the renders, the views with sections and part list, and the layout drawing of the sample conditioning system.</p>
+      <p>An outdoor cabinet for an oxygen analyzer with its sample conditioning system: frame and body, door with window, cable ducts, C-rails, vortex cooler, filter regulators, zero and span gas cylinders and all tubing. I designed it before anything was bought or built. I modelled the full assembly in SolidWorks, made the drawings and renders, and gave the exact purchase list: every part that was needed and how many.</p>
       <div class="gal">
         <button data-full="img/full/shelter-r3.jpg" data-cap="Render, door open"><img src="img/thumb/shelter-r3.jpg" alt="Render, door open" loading="lazy"><figcaption>Render, door open</figcaption></button>
         <button data-full="img/full/shelter-r1.jpg" data-cap="Render, cylinders and regulators"><img src="img/thumb/shelter-r1.jpg" alt="Render, cylinders and regulators" loading="lazy"><figcaption>Render, cylinders and regulators</figcaption></button>
-        <button data-full="img/full/shelter-r2.jpg" data-cap="Render, side view"><img src="img/thumb/shelter-r2.jpg" alt="Render, side view" loading="lazy"><figcaption>Render, side view</figcaption></button>
         <button data-full="img/full/shelter-views.jpg" data-cap="Views and sections with part list"><img src="img/thumb/shelter-views.jpg" alt="Views and sections with part list" loading="lazy"><figcaption>Views and sections with part list</figcaption></button>
         <button data-full="img/full/shelter-iso.jpg" data-cap="Isometric assembly with balloons"><img src="img/thumb/shelter-iso.jpg" alt="Isometric assembly with balloons" loading="lazy"><figcaption>Isometric assembly with balloons</figcaption></button>
         <button data-full="img/full/shelter-scs.jpg" data-cap="Sample conditioning system layout"><img src="img/thumb/shelter-scs.jpg" alt="Sample conditioning system layout" loading="lazy"><figcaption>Sample conditioning system layout</figcaption></button>
@@ -356,21 +375,43 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
     <div class="proj-main">
       <div class="proj-no">P-09</div>
       <h3>Large refinery tanks revised for a new project</h3>
-      <p>In 2019 the tank designs of the Bandar Abbas Condensate Gas Refinery were reused for another project. I revised the API 650 calculations and the drawings: shell courses, wind girders, seismic checks, roofs, floating roofs, venting and base loads.</p>
+      <p>In 2019 the tank designs of the Bandar Abbas Condensate Gas Refinery were reused for another project. I revised the API 650 calculations and the drawings, and reissued them for construction: shell courses, wind girders, seismic checks, fixed roofs, floating roofs, venting and base loads.</p>
       <ul>
         <li>NHT feed tanks TK-2002 A/B/C: 83.9 m diameter, cone roof, about 72,000 m³ each, about 1,410 t erection weight.</li>
         <li>KHT feed tanks TK-2004 A/B: 50 m diameter, double-deck floating roof.</li>
         <li>Isomerization feed and isomerate tanks: 32 m and 46 m diameter, dome roof, one with an internal floating roof.</li>
       </ul>
+      <p>For floating roof tanks I prepare the whole document package myself:</p>
+      <div class="docs"><div class="label">Document package for a floating roof tank</div><ul>
+        <li>Strength calculation of shell and bottom</li>
+        <li>Floating roof calculation</li>
+        <li>Roof and deck support steel structure calculation</li>
+        <li>General assembly</li>
+        <li>Shell plate, annular and bottom plate drawings</li>
+        <li>Fixed roof plate and roof structure drawings</li>
+        <li>Floating roof deck plates, lower and upper deck</li>
+        <li>Deck and roof supports</li>
+        <li>Compartment, deck, roof and shell manways</li>
+        <li>Rim vent, bleeder vent, emergency roof drain</li>
+        <li>Guide pole, gauge hatch, draw-off sump, foam dam</li>
+        <li>Wind girder and walkway, intermediate wind girder</li>
+        <li>Rolling ladder with wheels, rail and platform</li>
+        <li>Spiral stair, earthing, shell and roof nozzles</li>
+        <li>Water cooling system</li>
+        <li>Material requisition, WPS, ITP, PQR</li>
+        <li>Painting, fabrication and erection procedures</li>
+      </ul></div>
       <div class="gal wide">
+        <button data-full="img/full/ba-shell.jpg" data-cap="Shell plate drawing, TK-2002 A"><img src="img/thumb/ba-shell.jpg" alt="Shell plate drawing, TK-2002 A" loading="lazy"><figcaption>Shell plate drawing, TK-2002 A</figcaption></button>
+        <button data-full="img/full/ba-bottom.jpg" data-cap="Annular and bottom plates, TK-2002 A/B/C"><img src="img/thumb/ba-bottom.jpg" alt="Annular and bottom plates, TK-2002 A/B/C" loading="lazy"><figcaption>Annular and bottom plates, TK-2002 A/B/C</figcaption></button>
         <button data-full="img/full/ba-kht.jpg" data-cap="Data sheet, KHT feed tank TK-2004 A/B"><img src="img/thumb/ba-kht.jpg" alt="Data sheet, KHT feed tank TK-2004 A/B" loading="lazy"><figcaption>Data sheet, KHT feed tank TK-2004 A/B</figcaption></button>
-        <button data-full="img/full/ba-datasheet.jpg" data-cap="Calculation input, NHT feed tank TK-2002 A/B/C"><img src="img/thumb/ba-datasheet.jpg" alt="Calculation input, NHT feed tank TK-2002 A/B/C" loading="lazy"><figcaption>Calculation input, NHT feed tank TK-2002 A/B/C</figcaption></button>
       </div>
     </div>
     <dl class="data">
       <div><dt>Year</dt><dd>2019 (revision)</dd></div>
       <div><dt>Code</dt><dd>API 650 Annex E and S, API 2000, UBC zone 4</dd></div>
       <div><dt>Tanks</dt><dd>11 tanks, 32 to 84 m diameter</dd></div>
+      <div><dt>Roofs</dt><dd>Cone, dome, internal and double-deck floating</dd></div>
       <div><dt>Material</dt><dd>A573-70, A283-C, ST52</dd></div>
     </dl>
   </article>
@@ -389,6 +430,38 @@ dialog::backdrop{background:rgba(10,14,18,.8)}
       <div><dt>Tool</dt><dd>Excel</dd></div>
       <div><dt>Example</dt><dd>4 m cyclone, 31,000 m³/h</dd></div>
       <div><dt>Result</dt><dd>52 Pa pressure drop, 82 % collection efficiency</dd></div>
+    </dl>
+  </article>
+  <article class="proj" id="p11">
+    <div class="proj-main">
+      <div class="proj-no">P-11</div>
+      <h3>Trailer-mounted mini refinery</h3>
+      <p>A small refinery unit built on a steel skid that sits on a trailer. I designed and drew the skid frame with its member list, and two horizontal pressure vessels with 2:1 elliptical heads, one of them with an internal heating coil. The vessel drawings include nozzles, flanges, saddles, lifting lugs, name plate and weld details.</p>
+      <div class="gal">
+        <button data-full="img/full/mini-skid.jpg" data-cap="Skid frame on trailer, views and member list"><img src="img/thumb/mini-skid.jpg" alt="Skid frame on trailer, views and member list" loading="lazy"><figcaption>Skid frame on trailer, views and member list</figcaption></button>
+        <button data-full="img/full/mini-v1.jpg" data-cap="Horizontal vessel with heating coil"><img src="img/thumb/mini-v1.jpg" alt="Horizontal vessel with heating coil" loading="lazy"><figcaption>Horizontal vessel with heating coil</figcaption></button>
+        <button data-full="img/full/mini-v2.jpg" data-cap="Horizontal vessel"><img src="img/thumb/mini-v2.jpg" alt="Horizontal vessel" loading="lazy"><figcaption>Horizontal vessel</figcaption></button>
+      </div>
+    </div>
+    <dl class="data">
+      <div><dt>Equipment</dt><dd>Skid frame, 2 horizontal vessels</dd></div>
+      <div><dt>Heads</dt><dd>2:1 elliptical</dd></div>
+      <div><dt>Tool</dt><dd>AutoCAD</dd></div>
+    </dl>
+  </article>
+
+  <article class="proj" id="p12">
+    <div class="proj-main">
+      <div class="proj-no">P-12</div>
+      <h3>Decanter tank</h3>
+      <p>A decanter tank with its inner parts, a ladder with platform and the support frame. I made the design and the drawing: elevation and plan views, details, part list and the plate cutting plan.</p>
+      <div class="gal wide">
+        <button data-full="img/full/decanter2.jpg" data-cap="Decanter tank, views, details and cutting plan"><img src="img/thumb/decanter2.jpg" alt="Decanter tank, views, details and cutting plan" loading="lazy"><figcaption>Decanter tank, views, details and cutting plan</figcaption></button>
+      </div>
+    </div>
+    <dl class="data">
+      <div><dt>Drawing</dt><dd>GA, part list, cutting plan</dd></div>
+      <div><dt>Tool</dt><dd>AutoCAD</dd></div>
     </dl>
   </article>
 </section>
